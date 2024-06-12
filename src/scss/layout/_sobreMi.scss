@@ -1,0 +1,60 @@
+/* -- Estilos para.sobre-mi -- */
+.sobre-mi {
+  padding: 5rem 0;
+
+  /* -- .sobre-mi en tamaño tablet -- */
+  @include tablet {
+    @include grid(2, 5rem);
+  }
+}
+
+/* -- Estilos para .contenido-mi -- */
+.contenido-mi {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 5rem;
+
+  p{
+    margin-top: 1rem;
+  }
+
+  /* -- .contenido-mi en tablet -- */
+  @include tablet {
+    margin-top: 0;
+  }
+
+  /* -- Estilos para <h2> de .contenido-mi-- */
+  h2 {
+    margin-bottom: 2rem;
+    font-size: 4rem;
+  }
+
+  /* -- Estilos para .fecha detro de .contenido-mi-- */
+  .nombre {
+    color: $rosa;
+    font-weight: 700;
+    margin-top: 1em;
+    margin-bottom: 1rem;
+    font-size: 4rem;
+  }
+
+  ul {
+    @include resetear-lista;
+
+    li {
+      display: flex;
+      margin-bottom: 1rem;
+      gap: 1rem;
+
+      span {
+        margin-top: 0.8rem;
+      }
+
+      img {
+        margin-right: 1rem;
+        width: 3rem;
+      }
+    }
+  }
+}

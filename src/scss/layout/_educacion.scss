@@ -1,0 +1,92 @@
+/* -- Estilos para educacion -- */
+.educacion {
+  background-color: $rosa;
+  padding: 5rem 0;
+
+  h3,
+  p {
+    text-align: center;
+    color: $blanco;
+    @include sombra-texto;
+  }
+
+  .grados {
+    @include sombra;
+    @include sombra-texto;
+    text-transform: uppercase;
+    margin: 5rem 30%;
+    background-color: darken($rosa, 15%);
+  }
+}
+
+/* -- Estilos para para los grado-tablas -- */
+.grados-contenedor {
+  @include tablet {
+    @include grid(2, 5rem);
+  }
+
+  p {
+    color: $negro;
+  }
+}
+
+.grado-tabla {
+  @include sombra;
+  padding-top: 2rem;
+  margin-bottom: 6rem;
+
+  @include tablet{
+    margin-bottom: 0;
+  }
+  
+}
+
+  /*  background-image: url("../img/uptamca-logo.png"); */
+  .logo {
+    width: 20rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+
+  .viejo{
+    width: 12rem;
+    border-radius: 50%;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+  }
+
+
+.nombre-grado-tabla {
+  margin-bottom: .1rem;
+}
+
+/* -- Estilos para el calendario -- */
+.detalles {
+  @include resetear-lista;
+
+  li {
+    padding: 2.5rem;
+    font-weight: 700;
+
+    span {
+      font-weight: 400;
+      line-height: 1.5;
+    }
+  }
+}
+
+.bg-amarillo {
+  background-color: $amarillo;
+
+  li:nth-child(odd) {
+    background-color: darken($amarillo, 15%);
+  }
+}
+
+.bg-verde {
+  background-color: $verde;
+
+  li:nth-child(odd) {
+    background-color: darken($verde, 10%);
+  }
+}

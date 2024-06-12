@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV Online</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="build/css/app.css" />
+  </head>
+
+  <body>
+    <header class="header" id="header">
+      <div class="contenedor contenido-header">
+        <h1 class="titulo-principal">Mi CV Online</h1>
+
+        <nav class="navegacion-principal">
+          <a href="#educacion">Educación</a>
+          <a href="#habilidades">Habilidades</a>
+          <a href="#experiencia">Experiencia</a>
+        </nav>
+        <!-- .navegacion-principal -->
+      </div>
+      <!-- .contenedor .contenido-header -->
+    </header>
+    <!-- .header -->
+
+    <div class="video">
+      <div class="overlay">
+        <div class="contenedor contenido-video">
+          <h2>Javier E. Chacón D.</h2>
+          <p>Ing. Informático Colegiado</p>
+        </div>
+        <!--.contenedor .contenido-video -->
+      </div>
+      <!-- .overlay -->
+
+      <video autoplay muted loop>
+        <source src="video/video_fondo.mp4" type="video/mp4" />
+        <source src="video/video_fondo.ogg" type="video/ogg" />
+        <source src="video/video_fondo.webm" type="video/webm" />
+      </video>
+    </div>
+    <!-- .video -->
+
+    <section class="contenedor sobre-mi">
+      <!-- .imagen -->
+      <div class="imagen">
+        <picture>
+          <source
+            srcset="build/img/Foto_Carnet_Con_traje.avif"
+            type="image/avif"
+          />
+          <source
+            srcset="build/img/Foto_Carnet_Con_traje.webp"
+            type="image/webp"
+          />
+
+          <img
+            loading="lazy"
+            width="200"
+            height="300"
+            src="build/img/Foto_Carnet_Con_traje.png"
+            alt="imagen de mi"
+          />
+        </picture>
+      </div>
+      <!-- .imagen -->
+
+      <div class="contenido-mi">
+        <h2>Más Acerca de Mi</h2>
+
+        <ul class="resetear-lista">
+          <li id="nacimiento-logo">
+            <img
+              src="build/img/nacimineto-logo.webp"
+              alt="Logo de nacimiento"
+            /><span>18/06/1999</span>
+          </li>
+          <li id="localizacion-logo">
+            <img
+              src="build/img/localizacion.webp"
+              alt="Logo de localizacion"
+            /><span>Miranda, Venezuela</span>
+          </li>
+          <li id="localizacion-logo">
+            <img
+              src="build/img/telefono-logo.webp"
+              alt="Logo de teléfono"
+            /><span>+58-424-1757610</span>
+          </li>
+          <li id="localizacion-logo">
+            <img src="build/img/email-logo.webp" alt="Logo de correo" /><span
+              >javierecd@gmail</span
+            >
+          </li>
+        </ul>
+
+        <p class="nombre">Perfil</p>
+        <p>
+          Me caracteriza mi capacidad de aprendizaje rápido. Esta cualidad,
+          combinada con mi adaptabilidad, me permite integrarme eficientemente
+          en cualquier nuevo ambiente laboral. Estoy convencido de que una buena
+          capacitación es la clave para el éxito, ya sea trabajando de manera
+          independiente o en equipo.
+        </p>
+      </div>
+      <!-- .contenedor-festival -->
+    </section>
+    <!-- .contenedor .sobre-mi -->
+
+    <section class="educacion" id="educacion">
+      <h3>Educación, Cursos y Certificaciones</h3>
+
+      <p class="grados">Educación Universitaria</p>
+
+      <div class="grados-contenedor contenedor">
+        <div class="grado-tabla bg-amarillo">
+          <p class="nombre-grado-tabla">Ingeniero en Informática</p>
+          <img src="build/img/uptamca-logo.webp" alt="" class="logo" />
+
+          <ul class="detalles">
+            <li>
+              Institución |
+              <span
+                >Universidad Politécnica Territorial de Los Altos Mirandinos
+                Cecilio Acosta (U.P.T.A.M.C.A)</span
+              >
+            </li>
+            <li>Titulación | <span>Agosto 2023</span></li>
+            <li>Inicio de Estudios | <span>Enero 2020</span></li>
+            <li>Carrera | <span>P.N.F Informática</span></li>
+            <li>Lugar | <span>Los Teques, Miranda. Venezuela</span></li>
+          </ul>
+          <!-- .detalles -->
+        </div>
+        <!-- .grado-tabla .bg-amarillo -->
+
+        <div class="grado-tabla edm bg-verde">
+          <p class="nombre-grado-tabla">T.S.U en Informática</p>
+          <img
+            src="build/img/uptamca-logo-viejo.webp"
+            alt=""
+            class="logo viejo"
+          />
+
+          <ul class="detalles">
+            <li>
+              Institución |
+              <span
+                >Universidad Politécnica Territorial de Los Altos Mirandinos
+                Cecilio Acosta (U.P.T.A.M.C.A)</span
+              >
+            </li>
+            <li>Titulación | <span>Julio 2020</span></li>
+            <li>Inicio de Estudios | <span>Septiembre 2016</span></li>
+            <li>Carrera | <span>P.N.F Informática</span></li>
+            <li>Lugar | <span>Los Teques, Miranda. Venezuela</span></li>
+          </ul>
+          <!-- .grado-table -->
+        </div>
+        <!-- .grado-tabla .bg-verde -->
+      </div>
+      <!-- .grado-tabla-contenedor .contenedor -->
+
+      <p class="grados">Curos y Certificaiones</p>
+
+      <div class="grados-contenedor contenedor">
+        <div class="grado-tabla bg-verde">
+          <p class="nombre-grado-tabla">Manipulación de Alimentos</p>
+          <img
+            src="build/img/aliementos-logo.webp"
+            alt=""
+            class="logo"
+          />
+
+          <ul class="detalles">
+            <li>
+              Institución |
+              <span>C.D.I Padre Cabrera (Corposalud Los Teques)</span>
+            </li>
+            <li>Año | <span>2017</span></li>
+            <li>Horas Académicas | <span>8</span></li>
+            <li>
+              Departamento | <span>División de Higiene de Los Alimentos</span>
+            </li>
+            <li>Lugar | <span>Los Teques, Miranda. Venezuela</span></li>
+          </ul>
+          <!-- .detalles -->
+        </div>
+        <!-- .grado-tabla  .bg-verde -->
+
+        <div class="grado-tabla edm bg-amarillo">
+          <p class="nombre-grado-tabla">grado-tabla EDM</p>
+
+          <ul class="detalles">
+            <li>24:00 | <span>Paul Van Dyk</span></li>
+            <li>22:00 | <span>Armin Van Buuren</span></li>
+            <li>20:00 | <span>Above & Beyond</span></li>
+            <li>19:00 | <span>Eric Prdyz</span></li>
+            <li>18:00 | <span>Ferry Corsten</span></li>
+            <li>17:00 | <span>Vini Vici</span></li>
+          </ul>
+          <!-- .detalles -->
+        </div>
+        <!-- .grado-tabla .edm .bg-amarillo -->
+      </div>
+      <!-- .grado-tabla-contenedor .contenedor -->
+    </section>
+    <!-- .educacion -->
+
+    <section class="habilidades contenedor" id="habilidades">
+      <h3>Galería</h3>
+
+      <ul class="galeria-imagenes"></ul>
+    </section>
+    <!-- .habilidades -->
+
+    <section class="experiencia bg-verde" id="experiencia">
+      <h3>Boletos</h3>
+
+      <div class="contenedor contenedor-experiencia">
+        <!-- Pase básico -->
+        <div class="basico pase">
+          <p class="nombre-pase">Pase uníco día</p>
+          <header class="pase-header">
+            <p>Incluye</p>
+          </header>
+          <div class="pase-body">
+            <ul>
+              <li>Acceso a ambos grado-tablas</li>
+              <li>Comida y bebida</li>
+            </ul>
+          </div>
+          <footer class="pase-footer">
+            <p>$100</p>
+          </footer>
+        </div>
+
+        <!-- Pase Premium -->
+        <div class="premium pase">
+          <p class="nombre-pase">Pase Fin de semana</p>
+          <header class="pase-header">
+            <p>Incluye</p>
+          </header>
+          <div class="pase-body">
+            <ul>
+              <li>Acceso a ambos grado-tablas</li>
+              <li>Comida y bebida</li>
+              <li>Camisa oficial del evento</li>
+              <li>Acceso VIP</li>
+            </ul>
+          </div>
+          <footer class="pase-footer">
+            <p>$180</p>
+          </footer>
+        </div>
+      </div>
+      <!-- .contenedor-experiencia -->
+    </section>
+    <!-- .experiencia -->
+
+    <button id="volverArriba" class="btn-volver-arriba">
+      <img src="build/img/flecha_arriba.webp" alt="" />
+    </button>
+
+    <footer class="site-footer">
+      <p>Rock & EDM Festival. Todos los derechos reservados</p>
+    </footer>
+    <!-- .site-footer -->
+
+    <script src="build/js/app.js"></script>
+  </body>
+</html>
