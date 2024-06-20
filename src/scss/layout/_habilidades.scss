@@ -1,0 +1,21 @@
+/* -- Estilos para galería -- */
+.habilidades {
+  padding: 5rem 0;
+
+  /* -- h3 de galería -- */
+  h3 {
+    text-align: center;
+  }
+}
+
+.habilidades-conocimientos{
+    @include resetear-lista;
+    margin: 0 auto;
+    display: grid;
+    @include grid(2, gap);
+    justify-items: center;
+    line-height: 2;
+    font-size: 1.8rem;
+    list-style: url('/build/img/casilla-de-verificacion-marcada.webp');
+
+}
